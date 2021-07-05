@@ -1,0 +1,9 @@
+:root {
+  --blue: #0065fc;
+  --light-blue: #deebff;
+  --grey: #f2f2f2;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+}

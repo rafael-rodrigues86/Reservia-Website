@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reservia</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="../CSS/sanitize.css" />
+    <link rel="stylesheet" href="../CSS/base.css" />
+
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Font Awesome-->
+    <script
+      src="https://kit.fontawesome.com/937458d88c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <div class="logo">
+        <a href="#" class="logo__link">
+          <img
+            src="../Images/logo/Reservia.svg"
+            alt="Reservia"
+            class="logo__image"
+          />
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#accommodation">Accommodations</a></li>
+          <li class="nav__item"><a href="#activities">Activities</a></li>
+          <li class="nav__item"><a href="#">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!--Search-->
+      <section class="search">
+        <h1>Find a place for your dream vacation</h1>
+        <p>Downtown or in nature</p>
+        <div class="search-box">
+          <input
+            type="search"
+            name="searchfield"
+            id="searchfield"
+            value="Marseille,France"
+          />
+          <input type="submit" value="Search" />
+        </div>
+      </section>
+
+      <!--Filter (Should it be within Search?) -->
+      <section class="filter">
+        <h3>Filters</h3>
+        <div class="options">
+          <ul class="options__list">
+            <li class="options__item">Low Cost</li>
+            <li class="options__item">Romantic</li>
+            <li class="options__item">Family-friendly</li>
+            <li class="options__item">Pets allowed</li>
+          </ul>
+        </div>
+        <div class="availability">
+          <i class="fas fa-info-circle"></i>
+          <p>More than 500 accommodations are available in this city</p>
+        </div>
+      </section>
+
+      <!--Popular-->
+      <section class="popular">
+        <div class="popular__container">
+          <h2>Most Popular</h2>
+          <i class="fas fa-chart-line"></i>
+        </div>
+        <div class="popular__room">
+          <img
+            src="../Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg,
+              ../Images/hebergements/3_medium/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg  3x
+            "
+            alt="Morning Sun Hotel"
+          />
+          <h3>Morning Sun Hotel</h3>
+          <p>Night starting at <strong>&euro;128</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+
+        <div class="popular__room">
+          <img
+            src="../Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg,
+              ../Images/hebergements/3_medium/aw-creative-VGs8z60yT2c-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/aw-creative-VGs8z60yT2c-unsplash.jpg  3x
+            "
+            alt="Au coeur de l'eau Bed and Breakfast"
+          />
+          <h3>Au coeur de l'eau Bed and Breakfast</h3>
+          <p>Night starting at <strong>&euro;71</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star unchecked"></i>
+        </div>
+
+        <div class="popular__room">
+          <img
+            src="../Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg,
+              ../Images/hebergements/3_medium/febrian-zakaria-sjvU0THccQA-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/febrian-zakaria-sjvU0THccQA-unsplash.jpg  3x
+            "
+            alt="Tout Bleu e Blanc Hotel"
+          />
+          <h3>Tout Bleu e Blanc Hotel</h3>
+          <p>Night starting at <strong>&euro;68</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star unchecked"></i>
+        </div>
+      </section>
+
+      <!--Accommodatin-->
+      <section class="accommodation">
+        <h2>Accommodations in Marseille</h2>
+        <div class="accommodation__room">
+          <img
+            src="../Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg,
+              ../Images/hebergements/3_medium/marcus-loke-WQJvWU_HZFo-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/marcus-loke-WQJvWU_HZFo-unsplash.jpg  3x
+            "
+            alt="Auberge de la Cannebière"
+          />
+          <h3>Auberge de la Cannebière</h3>
+          <p>Night starting at <strong>&euro;25</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star unchecked"></i>
+        </div>
+
+        <div class="accommodation__room">
+          <img
+            src="../Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg,
+              ../Images/hebergements/3_medium/fred-kleber-gTbaxaVLvsg-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/fred-kleber-gTbaxaVLvsg-unsplash.jpg  3x
+            "
+            alt="Hôtel du Port"
+          />
+          <h3>Hôtel du Port</h3>
+          <p>Night starting at <strong>&euro;52</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+
+        <div class="accommodation__room">
+          <img
+            src="../Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg,
+              ../Images/hebergements/3_medium/reisetopia-B8WIgxA_PFU-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/reisetopia-B8WIgxA_PFU-unsplash.jpg  3x
+            "
+            alt="Les mouettes Hotel"
+          />
+          <h3>Les mouettes Hotel</h3>
+          <p>Night starting at <strong>&euro;76</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star unchecked"></i>
+        </div>
+
+        <div class="accommodation__room">
+          <img
+            src="../Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg,
+              ../Images/hebergements/3_medium/annie-spratt-Eg1qcIitAuA-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/annie-spratt-Eg1qcIitAuA-unsplash.jpg  3x
+            "
+            alt="Hôtel de la Mer"
+          />
+          <h3>Hôtel de la Mer</h3>
+          <p>Night starting at <strong>&euro;46</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star unchecked"></i>
+          <i class="fas fa-star unchecked"></i>
+        </div>
+
+        <div class="accommodation__room">
+          <img
+            src="../Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg,
+              ../Images/hebergements/3_medium/nicate-lee-kT-ZyaiwBe0-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/nicate-lee-kT-ZyaiwBe0-unsplash.jpg  3x
+            "
+            alt="Auberge Le Panier"
+          />
+          <h3>Auberge Le Panier</h3>
+          <p>Night starting at <strong>&euro;23</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star unchecked"></i>
+        </div>
+
+        <div class="accommodation__room">
+          <img
+            src="../Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg"
+            srcset="
+              ../Images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg,
+              ../Images/hebergements/3_medium/febrian-zakaria-M6S1WvfW68A-unsplash.jpg 2x,
+              ../Images/hebergements/2_large/febrian-zakaria-M6S1WvfW68A-unsplash.jpg  3x
+            "
+            alt="Hôtel chez Amina"
+          />
+          <h3>Hôtel chez Amina</h3>
+          <p>Night starting at <strong>&euro;96</strong></p>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+          <i class="fas fa-star checked"></i>
+        </div>
+      </section>
+
+      <!--Activities-->
+      <section class="activities">
+        <h2>Activities in Marseille</h2>
+        <div class="activities__container">
+          <img
+            src="../Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+            srcset="
+              ../Images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg,
+              ../Images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg 2x,
+              ../Images/activites/2_large/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg  3x
+            "
+            alt="Old Port"
+          />
+          <h3>Old Port</h3>
+        </div>
+
+        <div class="activities__container">
+          <img
+            src="../Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+            srcset="
+              ../Images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg,
+              ../Images/activites/3_medium/paul-hermann-QFTrLdQIRhI-unsplash.jpg 2x,
+              ../Images/activites/2_large/paul-hermann-QFTrLdQIRhI-unsplash.jpg  3x
+            "
+            alt="Pomègues Fort"
+          />
+          <h3>Pomègues Fort</h3>
+        </div>
+
+        <div class="activities__container">
+          <img
+            src="../Images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+            srcset="
+              ../Images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg,
+              ../Images/activites/3_medium/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg 2x,
+              ../Images/activites/2_large/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg  3x
+            "
+            alt="Frioul Island"
+          />
+          <h3>Frioul Island</h3>
+        </div>
+
+        <div class="activities__container">
+          <img
+            src="../Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg"
+            srcset="
+              ../Images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg,
+              ../Images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg 2x,
+              ../Images/activites/2_large/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg  3x
+            "
+            alt="Calanques National Park"
+          />
+          <h3>Calanques National Park</h3>
+        </div>
+
+        <div class="activities__container">
+          <img
+            src="../Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+            srcset="
+              ../Images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg,
+              ../Images/activites/3_medium/florian-wehde-xW9e8gdotxI-unsplash.jpg 2x,
+              ../Images/activites/2_large/florian-wehde-xW9e8gdotxI-unsplash.jpg  3x
+            "
+            alt="Notre-Dame-de-la-Garde"
+          />
+          <h3>Notre-Dame-de-la-Garde</h3>
+        </div>
+
+        <div class="activities__container">
+          <img
+            src="../Images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
+            srcset="
+              ../Images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg,
+              ../Images/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg 2x,
+              ../Images/activites/2_large/lena-paulin-wH2-EJoDcV0-unsplash.jpg  3x
+            "
+            alt="Longchamp Park"
+          />
+          <h3>Longchamp Park</h3>
+        </div>
+      </section>
+    </main>
+
+    <!--Footer-->
+    <footer>
+      <div class="footer">
+        <h3>About</h3>
+        <ul>
+          <li>Site Map</li>
+          <li>General Terms and Conditions</li>
+          <li>Data and Privacy</li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <h3>Our Accommodations</h3>
+        <ul>
+          <li>Quality Assessment</li>
+          <li>You have a hotel?</li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <h3>Assistance</h3>
+        <ul>
+          <li>Help Desk</li>
+          <li>Contact Us</li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
