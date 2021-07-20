@@ -1,0 +1,38 @@
+footer {
+  background: var(--grey);
+  padding-left: 2rem;
+}
+
+.footer {
+  padding-top: 2.5rem;
+}
+
+.footer > h3 {
+  margin-bottom: 1.3rem;
+}
+
+.footer__list {
+  padding-bottom: 1rem;
+}
+
+.footer__list--nopadding {
+  padding-bottom: 0;
+}
+
+.footer__list--bigerpadding {
+  padding-bottom: 3rem;
+}
+
+@media screen and (min-width: 1083px) {
+  footer {
+    padding-bottom: 3rem;
+  }
+
+  .footer__container {
+    display: flex;
+  }
+
+  .footer {
+    margin-right: 14rem;
+  }
+}

@@ -1,0 +1,148 @@
+.activities {
+  padding-top: 1.2rem;
+  margin-bottom: 3rem;
+}
+
+.activities > h2 {
+  margin-left: 1.5rem;
+  margin-bottom: 2.1rem;
+}
+
+.activities__container {
+  height: 30vh;
+  width: 90vw;
+  margin: 1.25rem auto 2rem auto;
+  padding-bottom: 1.25rem;
+  border: 0;
+  border-radius: 25px;
+  background: var(--white);
+  box-shadow: var(--boxshaddow);
+}
+
+.activities__link {
+  display: flex;
+  flex-flow: column;
+  height: 28vh;
+}
+
+.activities__image {
+  max-width: 100%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 25px 25px 0 0;
+}
+
+.activities__header {
+  margin-left: 1.6rem;
+  margin-top: auto;
+  font-size: var(--fs-h3-box);
+}
+
+@media screen and (min-width: 650px) and (max-width: 991px) {
+  .activities__container--outer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 1.5rem;
+    width: 95vw;
+  }
+
+  .activities__container {
+    width: 31%;
+    padding-bottom: 0;
+    height: initial;
+    margin-bottom: 1rem;
+  }
+
+  .activities__link {
+    height: 16rem;
+  }
+
+  .activities__header {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .activities {
+    width: 93vw;
+  }
+
+  .activities__container--outer {
+    display: grid;
+    grid-template-columns:
+      minmax(20.6vw, 21.6vw) minmax(20.6vw, 21.6vw) minmax(20.6vw, 21.6vw)
+      minmax(20.6vw, 21.6vw);
+    grid-template-rows: auto auto;
+    grid-template-areas: 'old pomegues calanques notre' 'old frioul calanques longchamp';
+    column-gap: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+    height: 28.5rem;
+  }
+
+  .activities__container {
+    max-width: 21.6vw;
+    margin: 0;
+    height: initial;
+  }
+  .old {
+    grid-area: old;
+  }
+
+  .pomegues {
+    grid-area: pomegues;
+    align-self: start;
+  }
+
+  .frioul {
+    grid-area: frioul;
+    align-self: end;
+  }
+
+  .calanques {
+    grid-area: calanques;
+  }
+
+  .notre {
+    grid-area: notre;
+    align-self: start;
+  }
+
+  .longchamp {
+    grid-area: longchamp;
+    align-self: end;
+  }
+
+  img[alt='Old Port'],
+  img[alt='Calanques National Park'] {
+    height: 93%;
+  }
+
+  img[alt='Longchamp Park'] {
+    height: 84%;
+  }
+
+  .activities--old,
+  .activities--calanques {
+    height: 27.5rem;
+  }
+
+  .activities--pomegues,
+  .activities--longchamp {
+    height: 13rem;
+  }
+
+  .activities--frioul,
+  .activities--notre {
+    height: 10rem;
+  }
+}
+
+@media screen and (min-width: 1232px) {
+  .activities__container--outer {
+    width: 95vw;
+  }
+}

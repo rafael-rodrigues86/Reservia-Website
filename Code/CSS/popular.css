@@ -1,0 +1,134 @@
+.popular {
+  background: var(--grey);
+  padding-bottom: 1.25rem;
+}
+
+.popular__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+  margin: 0 1.25rem 1.88rem 1.4rem;
+}
+
+.fa-chart-line {
+  font-size: var(--fs-h2);
+}
+
+.popular__room {
+  width: 90vw;
+  height: 21vh;
+  margin: 0 auto 0.7rem auto;
+  padding-left: 0.31rem;
+  border: 0;
+  border-radius: 25px;
+  background: var(--white);
+  box-shadow: var(--boxshaddow);
+}
+
+.popular__link {
+  display: flex;
+  height: 21vh;
+}
+
+.popular__img {
+  width: 40%;
+  height: 93%;
+  border-radius: 20px 0 0 20px;
+  object-fit: cover;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.popular__information {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
+  flex: 1;
+}
+
+.information__header {
+  font-size: var(--fs-h3-box);
+}
+
+.information__paragraph {
+  font-size: var(--fs-p-box);
+}
+
+@media screen and (min-width: 500px) and (max-width: 599px) {
+  .popular__img {
+    width: 50%;
+  }
+
+  .popular__information {
+    padding-left: 2.3rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 991px) {
+  .popular__flexbox {
+    display: flex;
+    width: 95vw;
+    margin-left: 1.5rem;
+    margin-right: auto;
+  }
+
+  .popular__room {
+    margin-right: 0.6rem;
+    height: 16rem;
+    padding-left: 0;
+    width: 33%;
+  }
+
+  .popular__link {
+    height: 15rem;
+    flex-flow: column;
+  }
+
+  .popular__img {
+    width: 95%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+    margin-top: 0.4rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 0;
+  }
+
+  .popular__information {
+    padding-right: 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .popular {
+    width: 32vw;
+    height: 41rem;
+    border: 0;
+    border-radius: 18px;
+  }
+
+  .popular__container {
+    margin-bottom: 1.3rem;
+  }
+
+  .popular__room {
+    width: 85%;
+    height: initial;
+    margin-bottom: 2.5rem;
+    padding-left: 0;
+  }
+
+  .popular__link {
+    height: 9.5rem;
+  }
+
+  .popular__img {
+    width: 42%;
+    border-radius: 25px 0 0 25px;
+    padding-left: 5.76px;
+    height: 8.78rem;
+  }
+}
