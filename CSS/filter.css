@@ -8,12 +8,19 @@
 }
 
 .filter__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
 
 .filter__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
   align-items: center;
   border-bottom: 2px solid var(--medium-grey);
   border-top: 2px solid var(--medium-grey);
@@ -56,10 +63,14 @@
 }
 
 .availability {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 1.875rem;
   margin-left: 1.5rem;
   margin-bottom: 2.2rem;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
   align-items: baseline;
 }
 
@@ -102,7 +113,11 @@
 
 @media screen and (min-width: 992px) {
   .filter__flexbox {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     margin-left: 0;
   }
@@ -115,10 +130,16 @@
   .filter__item {
     margin-top: 0;
     margin-left: 1.5rem;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    -o-transition: transform 0.5s;
     transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s;
   }
 
   .filter__item:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
   }
 
