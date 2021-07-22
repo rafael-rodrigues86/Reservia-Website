@@ -21,12 +21,12 @@
 }
 
 .activities__link {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  /* display: -webkit-box; */
+  /* display: -ms-flexbox; */
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column;
+  /* -webkit-box-orient: vertical; */
+  /* -webkit-box-direction: normal; */
+  /* -ms-flex-flow: column; */
   flex-flow: column;
   height: 28vh;
 }
@@ -34,7 +34,7 @@
 .activities__image {
   max-width: 100%;
   height: 80%;
-  -o-object-fit: cover;
+  /* -o-object-fit: cover; */
   object-fit: cover;
   border-radius: 25px 25px 0 0;
 }
@@ -47,10 +47,10 @@
 
 @media screen and (min-width: 650px) and (max-width: 991px) {
   .activities__container--outer {
-    display: -webkit-box;
-    display: -ms-flexbox;
+    /* display: -webkit-box; */
+    /* display: -ms-flexbox; */
     display: flex;
-    -ms-flex-wrap: wrap;
+    /* -ms-flex-wrap: wrap; */
     flex-wrap: wrap;
     margin-left: 1.5rem;
     width: 95vw;
@@ -81,18 +81,18 @@
   }
 
   .activities__container--outer {
-    display: -ms-grid;
+    /* display: -ms-grid; */
     display: grid;
-    -ms-grid-columns: minmax(20.6vw, 21.6vw) 2rem minmax(20.6vw, 21.6vw) 2rem
-      minmax(20.6vw, 21.6vw) 2rem minmax(20.6vw, 21.6vw);
+    /* -ms-grid-columns: minmax(20.6vw, 21.6vw) 2rem minmax(20.6vw, 21.6vw) 2rem */
+    /* minmax(20.6vw, 21.6vw) 2rem minmax(20.6vw, 21.6vw); */
     grid-template-columns:
       minmax(20.6vw, 21.6vw) minmax(20.6vw, 21.6vw) minmax(20.6vw, 21.6vw)
       minmax(20.6vw, 21.6vw);
-    -ms-grid-rows: auto auto;
+    /* -ms-grid-rows: auto auto; */
     grid-template-rows: auto auto;
     grid-template-areas: 'old pomegues calanques notre' 'old frioul calanques longchamp';
-    -webkit-column-gap: 2rem;
-    -moz-column-gap: 2rem;
+    /* -webkit-column-gap: 2rem; */
+    /* -moz-column-gap: 2rem; */
     column-gap: 2rem;
     margin-left: 0;
     margin-right: 0;
@@ -110,13 +110,13 @@
 
   .pomegues {
     grid-area: pomegues;
-    -ms-grid-row-align: start;
+    /* -ms-grid-row-align: start; */
     align-self: start;
   }
 
   .frioul {
     grid-area: frioul;
-    -ms-grid-row-align: end;
+    /* -ms-grid-row-align: end; */
     align-self: end;
   }
 
@@ -126,13 +126,13 @@
 
   .notre {
     grid-area: notre;
-    -ms-grid-row-align: start;
+    /* -ms-grid-row-align: start; */
     align-self: start;
   }
 
   .longchamp {
     grid-area: longchamp;
-    -ms-grid-row-align: end;
+    /* -ms-grid-row-align: end; */
     align-self: end;
   }
 
@@ -158,40 +158,6 @@
   .activities--frioul,
   .activities--notre {
     height: 10rem;
-  }
-}
-
-@media screen and (min-width: 992px) {
-  .old {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 1;
-  }
-
-  .pomegues {
-    -ms-grid-row: 1;
-    -ms-grid-column: 3;
-  }
-
-  .frioul {
-    -ms-grid-row: 2;
-    -ms-grid-column: 3;
-  }
-
-  .calanques {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 5;
-  }
-
-  .notre {
-    -ms-grid-row: 1;
-    -ms-grid-column: 7;
-  }
-
-  .longchamp {
-    -ms-grid-row: 2;
-    -ms-grid-column: 7;
   }
 }
 
